@@ -10,6 +10,7 @@ const App: React.FC = () => {
   const [newTask, setNewTask] = useState('');
   const [filter, setFilter] = useState<'all' | 'pending' | 'completed'>('all'); // Estado para el filtro
 
+    // aplicaion
   // Aplicamos el filtro a las tareas
   const filteredTasks = tasks.filter(task => {
     if (filter === 'pending') return !task.completed;
